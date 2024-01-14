@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .main {
+        background-image: url("assets/images/background.jpg");
+        background-position: center center;
+        background-size: max(1200px, 100vw);
+        background-repeat: no-repeat;
+        height: 644px;
+        position: relative;
+      }
+
+      .main .box {
+        height: 644px;
+        width: 100%;
+        opacity: 0.69;
+        position: absolute;
+        top: 0;
+        background-color: black;
+      }
+
+      nav {
+        max-width: 60vw;
+        justify-content: space-between;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background-color: #ff0000;
+      }
+
+      nav img {
+        color: red;
+        width: 130px;
+        position: relative;
+        z-index: 10;
+      }
+
+      nav button {
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <span><img width="53" src="assets/images/logo.svg" alt="" /></span>
+        <div>
+          <button class="btn">English</button>
+          <button class="btn btn-red-sm">Sign In</button>
+        </div>
+      </nav>
+      <div class="box"></div>
+
+      <!-- <div class="separation"></div> -->
+    </div>
+  </body>
+</html>
